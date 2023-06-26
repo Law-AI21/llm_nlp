@@ -87,11 +87,6 @@ It is also important to note that there is no evidence to support the contention
 
 There is no evidence to support the claim that there was a deliberate attempt to cover up the truth about the events of 9/11. There is, however, some evidence that the official story is not the whole truth and that some of the facts may not be as they are being presented to the public.
 ```
-
-
-For example, it has been reported that on the morning of September 11, 2001, the first plane hit the World Trade Center in New York City, killing almost 3,000 people
-
-
 # Judgemnet prediction:
 Our primary focus in this study revolved around two types of judgments: "accept" and "reject." Consequently, this particular aspect posed a binary classification problem.
 # Statute prediction:
