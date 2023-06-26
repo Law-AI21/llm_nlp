@@ -60,8 +60,8 @@ This should print:
 10. The evidence presented by the prosecution doesn't seem to match up with the timeline of events, creating doubt about the veracity of their claims.
 ```
 # Text generation using GPT-2 model:
-Here we use GPT-2 pertained model. <be>
-Example: <br>
+Here we use GPT-2 pertained model. <br>
+For example: <br>
 ```ruby
 !pip install transformers
 ```
