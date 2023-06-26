@@ -88,8 +88,8 @@ It is also important to note that there is no evidence to support the contention
 There is no evidence to support the claim that there was a deliberate attempt to cover up the truth about the events of 9/11. There is, however, some evidence that the official story is not the whole truth and that some of the facts may not be as they are being presented to the public.
 ```
 # Judgemnet prediction:
-Our primary focus in this study revolved around two types of judgments: "accept" and "reject." Consequently, this particular aspect posed a binary classification problem.
-# Statute prediction:
+Our primary focus in this study revolved around two types of judgments: "accept" and "reject." Consequently, this particular aspect posed a binary classification problem. For the embedding of each document, we used **InLegalBERT** and **BERT-uncased**.
+#  Statute prediction:
 In the context of statute prediction, our main emphasis was on five IPC sections. The descriptions of these sections are provided below: <br>
 * **IPC 148**: Rioting, armed with a deadly weapon. <br>
 * **IPC 300**: When culpable homicide is not murder. <br>
