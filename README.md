@@ -96,5 +96,5 @@ In the context of statute prediction, our main emphasis was on five IPC sections
 * **IPC 302**: Punishment for murder. <br>
 * **IPC 304**: Punishment for culpable homicide not amounting to murder. <br>
 * **IPC 307**: Attempt to murder.<br>
-This site was built using [GitHub Pages](https://pages.github.com/).
+For more information about **Indian Penal Code (IPC)** [IPC section details]([https://pages.github.com/](https://www.indiacode.nic.in/bitstream/123456789/2263/1/A1860-45.pdf)https://www.indiacode.nic.in/bitstream/123456789/2263/1/A1860-45.pdf).
 
