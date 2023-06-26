@@ -3,5 +3,5 @@
 Our primary focus in this study revolved around two types of judgments: "accept" and "reject." Consequently, this particular aspect posed a binary classification problem.
 # Statute prediction
 For the statute prediction, we mainly focused on five IPC sections. Description of the following sections is as follows: <br>
-** IPC 148 **:  Rioting, armed with a deadly weapon. <br>
-** IPC 300 **: When culpable homicide is not murder. <br>
+**IPC 148**:  Rioting, armed with a deadly weapon. <br>
+**IPC 300**: When culpable homicide is not murder. <br>
