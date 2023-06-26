@@ -1,4 +1,6 @@
 # llm_nlp
+# Flair model:
+As we mentioned in our paper, two law students annotated **200 crime-related** documents. To annotate those documents they mainly used **seven** tags- _expertWittest_, _wittest_, _assault_, _riot_, _homicide_, _imprisonment_, _evidence_.
 # Dataset:
 For all the experiments we used **Indian Supreme Court** proceedings.
 # Judgemnet prediction:
