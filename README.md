@@ -40,6 +40,19 @@ custom_prompt = f"""
 response = get_completion(custom_prompt)
 print(response)
 ```
+This should print:
+```ruby
+1. The witness statements seem to contradict each other on crucial points, raising concerns about their accuracy.
+2. It is unclear how the prosecution can reconcile the discrepancies between the witness statements and the physical evidence.
+3. The accused's alibi raises some inconsistencies, which need further investigation to establish the truth.
+4. The prosecution's version of events seems to conflict with the medical evidence, casting doubt on their reliability.
+5. The testimony of the key witness appears to be inconsistent with the facts of the case, leading to questions about their credibility.
+6. There seem to be discrepancies between the witness statements and the official records, which need to be resolved before proceeding with the case.
+7. The victim's statement contradicts that of the eyewitnesses, creating uncertainty about what really happened.
+8. The accused's story appears to change every time they are questioned, making it difficult to establish the facts of the case.
+9. The witness statements contain many inconsistencies, making it hard to determine what really happened.
+10. The evidence presented by the prosecution doesn't seem to match up with the timeline of events, creating doubt about the veracity of their claims.
+```
 
 # Judgemnet prediction:
 Our primary focus in this study revolved around two types of judgments: "accept" and "reject." Consequently, this particular aspect posed a binary classification problem.
