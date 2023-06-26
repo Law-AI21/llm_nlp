@@ -29,5 +29,3 @@ with open('7_tags_equal.csv') as file_obj:
             elif(len(k)-len(wordsList)==1):
                 tagged=nltk.pos_tag(wordsList)
                 tag(tagged,k[:-1])
-            
-       
