@@ -5,12 +5,40 @@ To train our model, we split our dataset in the ratio of 4:1. For the training w
 # Dataset:
 For all the experiments we used **Indian Supreme Court** proceedings.
 # Few-shot learning using GPT-3.5-turbo model:
-For training, we used 10 sentences for _riot_ and _evidence_.
+For training, we used 10 sentences for _riot_ and _evidence_. <be>
 In your favorite virtual environment, simply do:
 ```
-function test() {
-  console.log("notice the blank line before this function?");
-}
+!pip install openai
+def get_completion(prompt, model="gpt-3.5-turbo"):
+    messages = [{"role": "user", "content": prompt}]
+    response = openai.ChatCompletion.create(
+        model=model,
+        messages=messages,
+        temperature=0.8, # this is the degree of randomness of the model's output
+    )
+    return response.choices[0].message["content"]
+prompt="""
+He also took note of the fact that two persons Shambhu and Avadhlal were falsely involved as accused by P.W.1.
+There are many other vital discrepancies in the testimony of the eye witnesses inasmuch as the testimony of the witnesses are at variance with the case set out in the First Information Report and as such, the High Court was justified in discarding the testimony of the witnesses.
+There appears to be some inconsistency in the evidence of eye witnesses and the medical evidence but this inconsistency is of very insignificant character
+The submission was, their evidence is totally untrustworthy and suffers from material contradictions.
+There had been material discrepancies/contradictions/ inconsistencies in regard to the lodging of FIR and investigation so far as the statements of Pratap Singh, Head Constable and R.D. Yadav, S.O., and the entries made in the Rojnamcha.
+The prosecution case is that A-1 and A-5 armed with lathis and spears cannot be accepted inasmuch as neither of them used any such weapon
+We are therefore of the view that the credibility of his version regarding the words alleged to have been uttered by the victim is open to doubt as it goes against probabilities and the natural course of conduct
+This statement can not be true because, P.W.10 doctor specifically stated that the injured was not sent by the police and there was no hospital memo.
+Apart from the above infirmity in the evidence of three eye witnesses, I find that the prosecution evidence is of a partisan character and not such on which implicit reliance can be placed.
+PauL's testimony thus creates some doubt regarding the reliability of the prosecution evidence that Joseph had received injury with a wooden spear at the hand of accused No. 6.
+"""
+custom_prompt = f"""
+    Your task is to generate '30' statements that closely resemble the statements
+     given in the Examples delimited by \"\"\". The statements in the example resemble a tag \'evidence_inconsistency\'.
+     The generated statements should also resemble the same tag. Statements that imply some impending
+     discrepency in facts generally resemble \' evidence_inconsistency\'.
+     Each statement must not have less than \"25\" words.
+    Examples: \"\"\"{prompt}\"\"\"
+    """
+response = get_completion(custom_prompt)
+print(response)
 ```
 
 # Judgemnet prediction:
