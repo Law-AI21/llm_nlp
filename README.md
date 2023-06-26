@@ -9,6 +9,12 @@ For training, we used 10 sentences for _riot_ and _evidence_. <br>
 In your favorite virtual environment, simply do:
 ```ruby
 !pip install openai
+```
+```ruby
+import openai
+openai.api_key = " "
+```
+```ruby
 def get_completion(prompt, model="gpt-3.5-turbo"):
     messages = [{"role": "user", "content": prompt}]
     response = openai.ChatCompletion.create(
