@@ -59,6 +59,38 @@ This should print:
 9. The witness statements contain many inconsistencies, making it hard to determine what really happened.
 10. The evidence presented by the prosecution doesn't seem to match up with the timeline of events, creating doubt about the veracity of their claims.
 ```
+# Text generation using GPT-2 model:
+Here we use GPT-2 pertained model. <be>
+Example: <br>
+```ruby
+!pip install transformers
+```
+```ruby
+import tensorflow as tf
+from transformers import GPT2LMHeadModel, GPT2Tokenizer
+```
+```ruby
+for sent in collection:
+  j=len(sent)
+  encoded_input=tokenizer(i,return_tensors='pt')
+  ind=encoded_input['input_ids']
+  am=encoded_input['attention_mask']
+  #input_ids = tokenizer.encode(i, return_tensors='pt')
+  output = model.generate(ind,attention_mask=am,max_new_tokens=100, num_beams=5, no_repeat_ngram_size=2, early_stopping=True,temperature=1.5)
+  print(tokenizer.decode(output[0], skip_special_tokens=True)[j:])
+```
+This should print:
+```ruby
+The court also noted that the accused had not been produced before the court on the day of the hearing. The court further observed that it was not possible for the prosecution to prove the case beyond a reasonable doubt. It was, therefore, directed that both accused should be produced for cross-examination.
+
+It is also important to note that there is no evidence to support the contention that the accused was in possession of a firearm at the time of his arrest. It is not possible for a person to have a gun in his possession at a time when he is being questioned by the police. There is, therefore, no basis on which to conclude that he was carrying a weapon at that time. In addition, it is clear from the evidence of other witnesses that they were not aware of any gun being
+
+There is no evidence to support the claim that there was a deliberate attempt to cover up the truth about the events of 9/11. There is, however, some evidence that the official story is not the whole truth and that some of the facts may not be as they are being presented to the public.
+```
+
+
+For example, it has been reported that on the morning of September 11, 2001, the first plane hit the World Trade Center in New York City, killing almost 3,000 people
+
 
 # Judgemnet prediction:
 Our primary focus in this study revolved around two types of judgments: "accept" and "reject." Consequently, this particular aspect posed a binary classification problem.
