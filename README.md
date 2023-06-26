@@ -7,7 +7,7 @@ For all the experiments we used **Indian Supreme Court** proceedings.
 # Few-shot learning using GPT-3.5-turbo model:
 For training, we used 10 sentences for _riot_ and _evidence_. <be>
 In your favorite virtual environment, simply do:
-```
+```ruby
 !pip install openai
 def get_completion(prompt, model="gpt-3.5-turbo"):
     messages = [{"role": "user", "content": prompt}]
