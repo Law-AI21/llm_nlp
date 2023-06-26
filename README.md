@@ -96,4 +96,5 @@ In the context of statute prediction, our main emphasis was on five IPC sections
 * **IPC 302**: Punishment for murder. <br>
 * **IPC 304**: Punishment for culpable homicide not amounting to murder. <br>
 * **IPC 307**: Attempt to murder.<br>
+This site was built using [GitHub Pages](https://pages.github.com/).
 
