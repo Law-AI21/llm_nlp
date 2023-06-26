@@ -6,6 +6,13 @@ To train our model, we split our dataset in the ratio of 4:1. For the training w
 For all the experiments we used **Indian Supreme Court** proceedings.
 # Few-shot learning using GPT-3.5-turbo model:
 For training, we used 10 sentences for _riot_ and _evidence_.
+In your favorite virtual environment, simply do:
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
+
 # Judgemnet prediction:
 Our primary focus in this study revolved around two types of judgments: "accept" and "reject." Consequently, this particular aspect posed a binary classification problem.
 # Statute prediction:
