@@ -1,7 +1,6 @@
 # Automated Attributes Extraction using Large Language Models
+As we mentioned in our paper, two law students annotated **200 crime-related** documents. To annotate those documents they mainly used **seven** tags- _expertwittest_, _wittest_, _assault_, _riot_, _homicide_, _imprisonment_, _evidence_. Our goal is to leverage automation in order to extract fine-grained information from the documents. To enhance the effectiveness of automatically extracting these attributes from legal documents within a sequence labeling framework, we propose the utilization of a few-shot learning approach based on Large Language Models (LLMs). Moreover, we demonstrate the efficacy of the extracted attributes in two distinct downstream tasks, namely legal judgment prediction and legal statute prediction.
 # Flair model:
-As we mentioned in our paper, two law students annotated **200 crime-related** documents. To annotate those documents they mainly used **seven** tags- _expertwittest_, _wittest_, _assault_, _riot_, _homicide_, _imprisonment_, _evidence_. <br>
-To train our model, we split our dataset in the ratio of 4:1.<br>
 For indexing all the crime-related documents, **Lucence 8.11** (https://www.apache.org/dyn/closer.lua/lucene/java/8.11.2/lucene-8.11.2-src.tgz) was installed.
 
 # Dataset:
