@@ -3,7 +3,7 @@ As we mentioned in our paper, two law students annotated **200 crime-related** d
 # Flair model
  As the initial step, we fine-tuned the flair model using annotated sentences for each attribute. <br>
 Later we used our annotated sentences as a **query** to generate more sentences for a particular attribute. For this experiment, first indexed every sentence of a document using **Lucene**.<br>
-Those generated sentences were then **re-ranked** using **InLegalBERT** and **BERT-uncased** embeddings. After that, we selected top-k sentences and append them to the previous dataset. <br>
+Those generated sentences were then **re-ranked** using **InLegalBERT** and **BERT-uncased** embeddings. After that, we selected top-k sentences and append them to annotated set. <br>
 
 * For indexing all the crime-related documents, **Lucence 8.11** (https://www.apache.org/dyn/closer.lua/lucene/java/8.11.2/lucene-8.11.2-src.tgz) was installed.
 
