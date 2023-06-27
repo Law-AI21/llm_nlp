@@ -62,7 +62,8 @@ This should print:
 10. The evidence presented by the prosecution doesn't seem to match up with the timeline of events, creating doubt about the veracity of their claims.
 ```
 # Text generation using GPT-2 model:
-Here we use GPT-2 pertained model. <br>
+Here, we used GPT-2 pertained model. <br>
+For _riot_ and _evidence_ used 10 sentences to generate another 10 sentences.
 For example: <br>
 ```ruby
 !pip install transformers
