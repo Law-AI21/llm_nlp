@@ -95,12 +95,4 @@ There is no evidence to support the claim that there was a deliberate attempt to
 ```
 # Judgemnet prediction:
 Our primary focus in this study revolved around two types of judgments: "accept" and "reject." Consequently, this particular aspect posed a binary classification problem. For the embedding of each document, we used **InLegalBERT** (https://arxiv.org/pdf/2209.06049.pdf) and **BERT-uncased** (https://arxiv.org/pdf/1810.04805.pdf).
-#  Statute prediction:
-In the context of statute prediction, our main emphasis was on five IPC sections. The descriptions of these sections are provided below: <br>
-* **IPC 148**: Rioting, armed with a deadly weapon. <br>
-* **IPC 300**: When culpable homicide is not murder. <br>
-* **IPC 302**: Punishment for murder. <br>
-* **IPC 304**: Punishment for culpable homicide not amounting to murder. <br>
-* **IPC 307**: Attempt to murder.<br>
-For more information about **Indian Penal Code (IPC)** [Section details](https://www.indiacode.nic.in/bitstream/123456789/2263/1/A1860-45.pdf).
 
